@@ -7,8 +7,8 @@ public class Route01 extends RouteBuilder {
 
     public void configure() throws Exception {
 
-        from("file:CamelRouteFile/src/main/resources/data/inbox01?noop=true")
-                .to("file:CamelRouteFile/src/main/resources/data/outbox01");
+        from("file:CamelRoutes/src/main/resources/data/inbox01?noop=true")
+                .to("file:CamelRoutes/src/main/resources/data/outbox01");
     }
 }
 
