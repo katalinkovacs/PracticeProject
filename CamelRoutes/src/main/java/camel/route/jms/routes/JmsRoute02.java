@@ -10,10 +10,10 @@ public class JmsRoute02 extends RouteBuilder {
 
     public void configure() throws Exception {
 
-        from("jms:AddMsg.in")
+        from("amq:AddMsg.in")
                 .convertBodyTo(String.class)
                 .bean(addMessage, "processMsg")
-                .to("jms:AddMsg.out");
+                .to("amq:AddMsg.out");
     }
 
 }

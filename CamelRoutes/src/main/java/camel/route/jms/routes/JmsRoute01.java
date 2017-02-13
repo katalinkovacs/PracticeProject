@@ -5,8 +5,8 @@ public class JmsRoute01 extends RouteBuilder{
 
         public void configure() throws Exception {
 
-            from("jms:Route01.in")
-                    .to("jms:Route01.out");
+            from("amq:Route01.in")
+                    .to("amq:Route01.out");
         }
     }
 

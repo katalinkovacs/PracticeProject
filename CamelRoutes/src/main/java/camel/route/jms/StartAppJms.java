@@ -23,7 +23,7 @@ public class StartAppJms {
         ConnectionFactory connectionFactory =
                 new ActiveMQConnectionFactory("admin", "admin", "tcp://localhost:61616");
 
-        context.addComponent("jms", JmsComponent.jmsComponentAutoAcknowledge(connectionFactory));
+        context.addComponent("amq", JmsComponent.jmsComponentAutoAcknowledge(connectionFactory));
 
 
         //ADD ROUTE TO CONTEXT
