@@ -16,7 +16,7 @@
 
 
 
-    <bean id="amqRouteAddMsg" class="camel.route.jms.routes.JmsRoute02">
+    <bean id="amqRouteAddMsg" class="camel.route.jms.routes.AmqRoute02">
     </bean>
 
 
