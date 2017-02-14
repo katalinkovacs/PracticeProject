@@ -1,9 +1,11 @@
 package camel.route.jms;
 
+//IMPORT ROUTES
 import camel.route.jms.routes.AmqRoute01;
 import camel.route.jms.routes.AmqRoute02;
-
+import camel.route.jms.routes.AmqSortingRoute04;
 import camel.route.jms.routes.SortingRoute03;
+
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.apache.camel.CamelContext;
 import org.apache.camel.component.jms.JmsComponent;
@@ -27,10 +29,11 @@ public class StartAppAmq {
         context.addComponent("amq", JmsComponent.jmsComponentAutoAcknowledge(connectionFactory));
 
 
-        //ADD ROUTE TO CONTEXT
+        //ADD ROUTES TO CONTEXT
         context.addRoutes(new AmqRoute01());
         context.addRoutes(new AmqRoute02());
         context.addRoutes(new SortingRoute03());
+        context.addRoutes(new AmqSortingRoute04());
 
 
         context.start();
