@@ -4,7 +4,7 @@ import org.apache.camel.builder.RouteBuilder;
 import processor.AddMessage;
 
 
-public class JmsRoute02 extends RouteBuilder {
+public class AmqRoute02 extends RouteBuilder {
 
     private final AddMessage addMessage = new AddMessage();
 

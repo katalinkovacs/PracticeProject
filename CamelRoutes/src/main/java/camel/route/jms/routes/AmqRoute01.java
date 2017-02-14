@@ -1,7 +1,8 @@
 package camel.route.jms.routes;
 import org.apache.camel.builder.RouteBuilder;
 
-public class JmsRoute01 extends RouteBuilder{
+
+public class AmqRoute01 extends RouteBuilder{
 
         public void configure() throws Exception {
 

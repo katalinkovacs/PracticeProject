@@ -1,8 +1,9 @@
 package camel.route.jms;
 
-import camel.route.jms.routes.JmsRoute01;
-import camel.route.jms.routes.JmsRoute02;
+import camel.route.jms.routes.AmqRoute01;
+import camel.route.jms.routes.AmqRoute02;
 
+import camel.route.jms.routes.SortingRoute03;
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.apache.camel.CamelContext;
 import org.apache.camel.component.jms.JmsComponent;
@@ -11,7 +12,7 @@ import org.apache.camel.impl.DefaultCamelContext;
 import javax.jms.ConnectionFactory;
 
 
-public class StartAppJms {
+public class StartAppAmq {
 
     public static void main(String ... args) throws Exception{
 
@@ -27,8 +28,9 @@ public class StartAppJms {
 
 
         //ADD ROUTE TO CONTEXT
-        context.addRoutes(new JmsRoute01());
-        context.addRoutes(new JmsRoute02());
+        context.addRoutes(new AmqRoute01());
+        context.addRoutes(new AmqRoute02());
+        context.addRoutes(new SortingRoute03());
 
 
         context.start();

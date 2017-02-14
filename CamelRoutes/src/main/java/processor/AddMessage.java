@@ -3,6 +3,8 @@ package processor;
 import org.apache.camel.Exchange;
 
 
+// Add "Szevasz" to the message.
+
 public class AddMessage {
 
     public void processMsg(Exchange ex){
