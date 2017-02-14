@@ -16,14 +16,31 @@
 
 
 
-    <bean id="amqRouteAddMsg" class="camel.route.jms.routes.AmqRoute02">
+<!-- COMMENT -->
+
+<!-- bean id="amqRouteAddMsg"   SAME AS  routeBuilder ref="amqRouteAddMsg"    -->
+
+
+    <!-- <bean id="amqRouteAddMsg" class="camel.route.jms.routes.AmqRoute02">
     </bean>
-
-
 
     <camelContext xmlns="http://camel.apache.org/schema/blueprint" id="katalin-practise-project">
         <routeBuilder ref="amqRouteAddMsg" id="katalin-addMsg" />
+    </camelContext>     -->
+
+
+<!--  COMMENT  -->
+
+
+    <bean id="amqSortingMsgRoute" class="camel.route.jms.routes.AmqSortingRoute04">
+    </bean>
+
+    <camelContext xmlns="http://camel.apache.org/schema/blueprint" id="katalin-practise-project">
+          <routeBuilder ref="amqSortingMsgRoute" id="katalin-sortingMsg" />
     </camelContext>
+
+
+
 
 
 </blueprint>
