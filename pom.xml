@@ -11,6 +11,8 @@
 
     <modules>
         <module>CamelRoutes</module>
+        <module>PersonInfo1</module>
+        <module>PersonInfo2</module>
     </modules>
 
 
