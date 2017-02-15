@@ -39,7 +39,7 @@ public class StartApp {
             person2.setLastName(person1.getLastname());
             person2.setDOB(person1.getDateofbirth());
 
-            File fileOut = new File("XmlProcessing/src/main/resources/data/EmployeeInfo_out_new.xml");
+            File fileOut = new File("TransformXmlToXml/src/main/resources/data/outbox/PersonInfo_out_2.xml");
             JAXBContext jaxbContextOut = JAXBContext.newInstance(Person2.class);
             Marshaller jaxbMarshaller = jaxbContextOut.createMarshaller();
             jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);

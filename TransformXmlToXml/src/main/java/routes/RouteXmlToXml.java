@@ -2,13 +2,13 @@ package routes;
 
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.converter.jaxb.JaxbDataFormat;
-
+import processors.ProcessorXmlToXml;
 
 
 public class RouteXmlToXml extends RouteBuilder  {
 
 
-    ProcessorXmltoXml processor1 = new ProcessorXmltoXml();
+    ProcessorXmlToXml processor1 = new ProcessorXmlToXml();
 
     public void configure() throws Exception {
 
