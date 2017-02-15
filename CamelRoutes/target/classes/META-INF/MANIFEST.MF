@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1487133435596
+Build-Jdk: 1.8.0_45
+Built-By: Katika
+Bundle-ManifestVersion: 2
+Bundle-Name: camel-route-file
+Bundle-SymbolicName: katalin-camel-route
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: camel.route.file;uses:="org.apache.camel,org.apache.came
+ l.impl,camel.route.file.routes";version="1.0.0.SNAPSHOT",camel.route.fi
+ le.routes;uses:="org.apache.camel.builder,org.apache.camel.model";versi
+ on="1.0.0.SNAPSHOT",camel.route.jms;uses:="org.apache.camel,org.apache.
+ activemq,javax.jms,org.apache.camel.impl,org.apache.camel.component.jms
+ ,camel.route.jms.routes";version="1.0.0.SNAPSHOT",camel.route.jms.route
+ s;uses:="org.apache.camel.builder,org.apache.camel.model,processor";ver
+ sion="1.0.0.SNAPSHOT",processor;uses:="org.apache.camel";version="1.0.0
+ .SNAPSHOT"
+Import-Package: javax.jms,org.apache.activemq,org.apache.activemq.camel.
+ component,org.apache.camel;version="[2.15,3)",org.apache.camel.builder;
+ version="[2.15,3)",org.apache.camel.component.jms;version="[2.15,3)",or
+ g.apache.camel.impl;version="[2.15,3)",org.apache.camel.model;version="
+ [2.15,3)",org.osgi.service.blueprint;version="[1.0.0,2.0.0)"
+Tool: Bnd-1.50.0
