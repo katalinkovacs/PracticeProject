@@ -1,14 +1,15 @@
 package processors;
 
 import org.apache.camel.Exchange;
+import personinfo1.Person1;
 
 public class ProcessorXmlToXml  {
 
 
-    public void processor01(Exchange ex) throws Exception {
+    public void myprocessor (Exchange ex) throws Exception {
 
         //change file name to have a different output file name
-        ex.getIn().setHeader("CamelFileName", "Employee1MsgOut.xml");
+        ex.getIn().setHeader("CamelFileName", "PersonInfoOut.xml");
         //this is just for debugging
         System.out.print("got here");
 

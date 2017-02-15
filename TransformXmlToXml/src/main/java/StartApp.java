@@ -1,5 +1,5 @@
 import personinfo1.Person1;
-import personinfo1.Person1;
+import personinfo2.Person2;
 
 
 import javax.xml.bind.JAXBContext;

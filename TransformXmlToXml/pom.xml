@@ -17,18 +17,27 @@
     <dependencies>
 
         <dependency>
-            <artifactId>katalin-parent</artifactId>
             <groupId>katalin</groupId>
             <artifactId>person-info1</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>
-            <artifactId>katalin-parent</artifactId>
             <groupId>katalin</groupId>
             <artifactId>person-info2</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!--JAXB2 MAVEN PLUGIN-->
+        <dependency>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>jaxb2-maven-plugin</artifactId>
+            <version>2.3</version>
         </dependency>
 
     </dependencies>
+
+
 
 
 </project>
