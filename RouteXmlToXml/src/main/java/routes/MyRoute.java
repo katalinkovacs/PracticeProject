@@ -4,9 +4,7 @@ import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.converter.jaxb.JaxbDataFormat;
 import processor.ProcessorPerson1toPerson2;
 
-/**
- * Created by Zoli on 15/02/2017.
- */
+
 public class MyRoute extends RouteBuilder{
     ProcessorPerson1toPerson2 processor = new ProcessorPerson1toPerson2();
 

@@ -15,6 +15,7 @@
         <module>PersonInfo2</module>
         <module>TransformXmlToXml</module>
         <module>RouteXmlToXml</module>
+        <module>TransformationXmlToXml</module>
     </modules>
 
 
