@@ -17,7 +17,7 @@ public class RoutePerson1ToPerson2 extends RouteBuilder{
 
             JaxbDataFormat jaxbDataFormatPerson2 = new JaxbDataFormat("personinfo2");
 
-            from("file:TransformationXmlToXml/src/main/resources/data/inbox?noop=true")
+            from("amq:data.in")
                     //unmarshalling is the process to read in xml and convert to java object using jaxb generated template
                     // classes
                     .unmarshal(jaxbDataFormatPerson1)
@@ -26,7 +26,7 @@ public class RoutePerson1ToPerson2 extends RouteBuilder{
                     //marshalling is the process to convert java to xml -- the processor from previous step returns
                     // a person2 which will be used to create the output xml
                     .marshal(jaxbDataFormatPerson2)
-                    .to("file:TransformationXmlToXml/src/main/resources/data/outbox");
+                    .to("amq:data.out");
 
         }
 
