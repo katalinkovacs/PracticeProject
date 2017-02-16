@@ -1,4 +1,9 @@
 .idea/
 *.iml
+**/target/*
+target/
 **/target
-
+**/*/target/*
+PersonInfo1/target
+CamelRoutes/target/**
+PersonInfo2/target
