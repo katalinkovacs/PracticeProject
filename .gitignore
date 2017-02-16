@@ -7,3 +7,6 @@ target/
 PersonInfo1/target
 CamelRoutes/target/**
 PersonInfo2/target
+
+PersonInfo2/src/*
+PersonInfo1/src/*
