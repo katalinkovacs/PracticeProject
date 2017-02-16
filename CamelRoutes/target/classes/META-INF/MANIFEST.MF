@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1487216995520
+Bnd-LastModified: 1487222622181
 Build-Jdk: 1.8.0_45
 Built-By: Katika
 Bundle-ManifestVersion: 2
@@ -17,8 +17,8 @@ Export-Package: camel.route.file;uses:="org.apache.camel,org.apache.came
  sion="1.0.0.SNAPSHOT",processor;uses:="org.apache.camel";version="1.0.0
  .SNAPSHOT"
 Import-Package: javax.jms,org.apache.activemq,org.apache.activemq.camel.
- component,org.apache.camel;version="[2.18,3)",org.apache.camel.builder;
- version="[2.18,3)",org.apache.camel.component.jms;version="[2.15,3)",or
- g.apache.camel.impl;version="[2.18,3)",org.apache.camel.model;version="
- [2.18,3)",org.osgi.service.blueprint;version="[1.0.0,2.0.0)"
+ component,org.apache.camel;version="[2.16,3)",org.apache.camel.builder;
+ version="[2.16,3)",org.apache.camel.component.jms;version="[2.16,3)",or
+ g.apache.camel.impl;version="[2.16,3)",org.apache.camel.model;version="
+ [2.16,3)",org.osgi.service.blueprint;version="[1.0.0,2.0.0)"
 Tool: Bnd-1.50.0
