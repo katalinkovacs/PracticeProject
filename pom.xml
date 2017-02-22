@@ -65,17 +65,6 @@
             <version>2.15.1</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.camel/camel-maven-plugin -->
-
-
-        <!--    NEW      -->
-        <!--<dependency>
-            <groupId>javax.enterprise</groupId>
-            <artifactId>cdi-api</artifactId>
-            <version>1.0-SP4</version>
-        </dependency>  -->
-
-
 
     </dependencies>
 
