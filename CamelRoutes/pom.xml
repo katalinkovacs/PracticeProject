@@ -64,14 +64,14 @@
             </plugin>
 
             <!-- to run the example using mvn camel:run -->
-            <plugin>
+            <!--<plugin>
                 <groupId>org.apache.camel</groupId>
                 <artifactId>camel-maven-plugin</artifactId>
                 <version>2.15.1.redhat-620133</version>
                 <configuration>
                     <useBlueprint>true</useBlueprint>
                 </configuration>
-            </plugin>
+            </plugin> -->
 
         </plugins>
     </build>

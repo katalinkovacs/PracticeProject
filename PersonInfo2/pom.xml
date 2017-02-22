@@ -11,7 +11,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <artifactId>person-info2</artifactId>
-    <packaging>jar</packaging>
+    <packaging>bundle</packaging>
 
 
 
@@ -21,12 +21,6 @@
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>jaxb2-maven-plugin</artifactId>
             <version>2.3</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.camel</groupId>
-            <artifactId>camel-jaxb</artifactId>
-            <version>2.18.0</version>
         </dependency>
 
     </dependencies>
@@ -58,6 +52,31 @@
                 </configuration>
 
             </plugin>
+
+
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>2.3.7</version>
+                <extensions>true</extensions>
+                <executions>
+                    <execution>
+                        <id>bundle-manifest</id>
+                        <phase>process-classes</phase>
+                        <goals>
+                            <goal>manifest</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <instructions>
+                        <Bundle-SymbolicName>person-info2</Bundle-SymbolicName>
+                        <Private-Package>com.mycompany.camel.blueprint.*</Private-Package>
+                        <Import-Package>*,!aQute.service.scripting</Import-Package>
+                    </instructions>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
 
